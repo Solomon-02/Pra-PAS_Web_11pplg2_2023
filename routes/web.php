@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Students;
 use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\ParentsController;
+use App\Http\Controllers\TeachersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,3 +40,5 @@ Route::get('/students/all', [StudentsController::class, 'index'])->name('student
 Route::get('/students/detail/{id}', [StudentsController::class, 'showDetail']);
 Route::get('/parents/all', [ParentsController::class, 'index']);
 Route::get('/parents/detail/{id}', [ParentsController::class, 'showDetail']);
+Route::get('/teachers/all', [TeachersController::class, 'index']);
+Route::get('/teachers/detail/{id}', [TeachersController::class, 'showDetail']);
